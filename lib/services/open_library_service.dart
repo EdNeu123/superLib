@@ -19,6 +19,42 @@ class OpenLibraryService {
     'User-Agent': 'BuscaDeLivrosApp/1.0 (contato@buscadelivros.app)',
   };
 
+  /// Busca livros por título/autor/palavra-chave (campo de busca da tela).
+  ///
+  /// Usa paginação por `page` (a própria API já entrega ~20 por página).
+  Future<BookPage> searchBooks({
+    required String query,
+    int page = 1,
+    int limit = 20,
+  }) async {
+    final uri = Uri.parse(
+      '$_baseUrl/search.json'
+      '?q=${Uri.encodeQueryComponent(query)}'
+      '&page=$page'
+      '&limit=$limit'
+      // Só pedimos os campos que usamos — resposta mais leve e rápida.
+      '&fields=key,title,author_name,cover_i,first_publish_year,edition_count',
+    );
+
+    final response = await http.get(uri, headers: _headers);
+
+    if (response.statusCode != 200) {
+      throw Exception('Não foi possível buscar livros agora.');
+    }
+
+    final data = json.decode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+    final docsJson = (data['docs'] as List?) ?? const [];
+    final books = docsJson
+        .map((d) => Book.fromSearchJson(d as Map<String, dynamic>))
+        .toList();
+
+    final numFound = data['numFound'] as int? ?? books.length;
+    final foundSoFar = (page - 1) * limit + books.length;
+    final hasMore = foundSoFar < numFound && books.isNotEmpty;
+
+    return BookPage(books: books, hasMore: hasMore);
+  }
+
   /// Busca livros de um assunto/categoria (usado como listagem inicial,
   /// antes de o usuário digitar algo na busca).
   ///
