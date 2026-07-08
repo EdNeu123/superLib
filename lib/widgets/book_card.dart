@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../models/book.dart';
 
-/// Card usado no grid de livros. Mostra a capa e o título/autor.
-/// Ao tocar, abre o pop-up (Dialog) com os detalhes — ver [onTap].
+/// Card usado no grid de livros (3 colunas): capa pequena à esquerda,
+/// título e autor à direita. Ao tocar, abre o pop-up de detalhes — [onTap].
 class BookCard extends StatelessWidget {
   final Book book;
   final VoidCallback onTap;
@@ -17,43 +17,52 @@ class BookCard extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Expanded(
-              child: Hero(
+        child: Padding(
+          padding: const EdgeInsets.all(6),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Hero(
                 tag: book.workKey,
-                child: _Cover(book: book, cores: cores),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(8, 6, 8, 8),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    book.title,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 13,
-                    ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(6),
+                  child: SizedBox(
+                    width: 38,
+                    height: 56,
+                    child: _Cover(book: book, cores: cores),
                   ),
-                  const SizedBox(height: 2),
-                  Text(
-                    book.authorsText,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: cores.onSurfaceVariant,
-                    ),
-                  ),
-                ],
+                ),
               ),
-            ),
-          ],
+              const SizedBox(width: 6),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      book.title,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 11,
+                        height: 1.2,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      book.authorsText,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 9.5,
+                        color: cores.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -83,8 +92,8 @@ class _Cover extends StatelessWidget {
           color: cores.surfaceContainerHighest,
           child: const Center(
             child: SizedBox(
-              width: 20,
-              height: 20,
+              width: 12,
+              height: 12,
               child: CircularProgressIndicator(strokeWidth: 2),
             ),
           ),
@@ -99,7 +108,7 @@ class _Cover extends StatelessWidget {
       color: cores.surfaceContainerHighest,
       child: Icon(
         Icons.menu_book_rounded,
-        size: 40,
+        size: 18,
         color: cores.onSurfaceVariant,
       ),
     );

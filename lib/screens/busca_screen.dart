@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import '../models/book.dart';
 import '../services/open_library_service.dart';
@@ -6,11 +8,10 @@ import '../widgets/book_details_dialog.dart';
 
 /// Tela inicial do app.
 ///
-/// ETAPA ATUAL: carrega livros da Open Library (assunto "fiction" como
-/// vitrine inicial) com paginação (20 por vez) e scroll infinito. Ao tocar
-/// em um card, abre o pop-up de detalhes.
-///
-/// A busca por título/autor (campo no topo) será ligada na próxima etapa.
+/// Mostra uma vitrine de livros (assunto "fiction") por padrão. Quando o
+/// usuário digita algo na busca, troca para os resultados de
+/// `search.json` — com debounce para não disparar uma requisição a cada
+/// tecla. Scroll infinito funciona nos dois modos.
 class BuscaScreen extends StatefulWidget {
   const BuscaScreen({super.key});
 
@@ -20,12 +21,22 @@ class BuscaScreen extends StatefulWidget {
 
 class _BuscaScreenState extends State<BuscaScreen> {
   static const int _pageSize = 20;
+  static const Duration _debounceDuration = Duration(milliseconds: 500);
 
   final OpenLibraryService _service = OpenLibraryService();
   final ScrollController _scrollController = ScrollController();
+  final TextEditingController _searchController = TextEditingController();
+  Timer? _debounce;
 
   final List<Book> _books = [];
-  int _offset = 0;
+
+  // Quando null, estamos mostrando a vitrine por assunto.
+  // Quando preenchida, estamos mostrando resultado de busca.
+  String? _query;
+
+  int _offset = 0; // paginação da vitrine (por assunto)
+  int _page = 1; // paginação da busca (search.json usa "page")
+
   bool _isLoadingFirstPage = true;
   bool _isLoadingMore = false;
   bool _hasMore = true;
@@ -40,7 +51,9 @@ class _BuscaScreenState extends State<BuscaScreen> {
 
   @override
   void dispose() {
+    _debounce?.cancel();
     _scrollController.dispose();
+    _searchController.dispose();
     super.dispose();
   }
 
@@ -55,6 +68,36 @@ class _BuscaScreenState extends State<BuscaScreen> {
     }
   }
 
+  void _onSearchChanged(String text) {
+    _debounce?.cancel();
+    _debounce = Timer(_debounceDuration, () {
+      final novaQuery = text.trim();
+      setState(() => _query = novaQuery.isEmpty ? null : novaQuery);
+      _loadFirstPage();
+    });
+  }
+
+  void _clearSearch() {
+    _debounce?.cancel();
+    _searchController.clear();
+    setState(() => _query = null);
+    _loadFirstPage();
+  }
+
+  Future<BookPage> _fetchPage({required bool isFirstPage}) {
+    final query = _query;
+    if (query != null) {
+      final page = isFirstPage ? 1 : _page;
+      return _service.searchBooks(query: query, page: page, limit: _pageSize);
+    }
+    final offset = isFirstPage ? 0 : _offset;
+    return _service.fetchBooksBySubject(
+      subject: 'fiction',
+      limit: _pageSize,
+      offset: offset,
+    );
+  }
+
   Future<void> _loadFirstPage() async {
     setState(() {
       _isLoadingFirstPage = true;
@@ -62,22 +105,19 @@ class _BuscaScreenState extends State<BuscaScreen> {
     });
 
     try {
-      final page = await _service.fetchBooksBySubject(
-        subject: 'fiction',
-        limit: _pageSize,
-        offset: 0,
-      );
+      final page = await _fetchPage(isFirstPage: true);
       setState(() {
         _books
           ..clear()
           ..addAll(page.books);
         _offset = page.books.length;
+        _page = 2; // próxima página da busca, se for o caso
         _hasMore = page.hasMore;
       });
     } catch (e) {
       setState(() => _errorMessage = e.toString());
     } finally {
-      setState(() => _isLoadingFirstPage = false);
+      if (mounted) setState(() => _isLoadingFirstPage = false);
     }
   }
 
@@ -85,19 +125,16 @@ class _BuscaScreenState extends State<BuscaScreen> {
     setState(() => _isLoadingMore = true);
 
     try {
-      final page = await _service.fetchBooksBySubject(
-        subject: 'fiction',
-        limit: _pageSize,
-        offset: _offset,
-      );
+      final page = await _fetchPage(isFirstPage: false);
       setState(() {
         _books.addAll(page.books);
         _offset += page.books.length;
+        _page += 1;
         _hasMore = page.hasMore;
       });
     } catch (e) {
-      // Falha ao carregar mais: mantém o que já foi exibido e avisa via SnackBar,
-      // sem travar a lista já carregada.
+      // Falha ao carregar mais: mantém o que já foi exibido e avisa via
+      // SnackBar, sem travar a lista já carregada.
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Não foi possível carregar mais livros.')),
@@ -119,14 +156,26 @@ class _BuscaScreenState extends State<BuscaScreen> {
       ),
       body: Column(
         children: [
-          // Campo de busca — visual pronto, funcionalidade na próxima etapa.
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
             child: TextField(
-              enabled: false,
+              controller: _searchController,
+              onChanged: _onSearchChanged,
+              textInputAction: TextInputAction.search,
               decoration: InputDecoration(
-                hintText: 'Buscar por título ou autor (em breve)',
+                hintText: 'Buscar por título ou autor',
                 prefixIcon: const Icon(Icons.search),
+                suffixIcon: ValueListenableBuilder<TextEditingValue>(
+                  valueListenable: _searchController,
+                  builder: (context, value, _) {
+                    if (value.text.isEmpty) return const SizedBox.shrink();
+                    return IconButton(
+                      icon: const Icon(Icons.close),
+                      tooltip: 'Limpar busca',
+                      onPressed: _clearSearch,
+                    );
+                  },
+                ),
                 filled: true,
                 fillColor: cores.surfaceContainerHighest,
                 border: OutlineInputBorder(
@@ -172,19 +221,39 @@ class _BuscaScreenState extends State<BuscaScreen> {
     }
 
     if (_books.isEmpty) {
-      return const Center(child: Text('Nenhum livro encontrado.'));
+      final query = _query;
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.search_off, size: 48, color: cores.onSurfaceVariant),
+              const SizedBox(height: 12),
+              Text(
+                query != null
+                    ? 'Nenhum resultado para "$query".'
+                    : 'Nenhum livro encontrado.',
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      );
     }
 
     return RefreshIndicator(
       onRefresh: _loadFirstPage,
       child: GridView.builder(
         controller: _scrollController,
-        padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
+        padding: const EdgeInsets.fromLTRB(8, 8, 8, 24),
+        // mainAxisExtent fixa a altura da linha — mais previsível que
+        // childAspectRatio para um card com texto de tamanho variável.
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          childAspectRatio: 0.58,
+          mainAxisSpacing: 8,
+          crossAxisSpacing: 8,
+          mainAxisExtent: 96,
         ),
         // +1 para o indicador de "carregando mais" no fim da lista.
         itemCount: _books.length + (_hasMore ? 1 : 0),

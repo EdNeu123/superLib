@@ -79,7 +79,7 @@ lib/
 ## Como executar
 
 ```bash
-git clone 
+git clone https://github.com/EdNeu123/controle-leitura-flutter.git
 cd controle-leitura-flutter
 flutter pub get
 flutter run
