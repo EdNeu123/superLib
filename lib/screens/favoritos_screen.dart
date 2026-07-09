@@ -123,7 +123,7 @@ class _FavoritosScreenState extends State<FavoritosScreen> {
       child: GridView.builder(
         padding: const EdgeInsets.fromLTRB(8, 8, 8, 24),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
           mainAxisExtent: 100,

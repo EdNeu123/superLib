@@ -1,107 +1,117 @@
-# Controle de Leitura — Galeria de Animações
+# 📚 Busca e Organização de Livros
 
-**Atividade Prática — Aula 9 | Desenvolvimento para Dispositivos Móveis**
-
----
-
-## Aluno
-
-Eduardo Jhonathan Passos Neumann
-ADS — 5ª Fase | Faculdade Senac Joinville | 2026/1
+Aplicativo Flutter para pesquisar livros por título ou autor, visualizar
+informações básicas (capa, autor, ano, sinopse) e salvar favoritos
+localmente para consulta posterior — consumindo a API pública da
+[Open Library](https://openlibrary.org/developers/api).
 
 ---
 
-## Descrição
+## Nome do curso
 
-Aplicativo Flutter que simula um controle de leitura pessoal. Parte da avaliação prática das aulas 7/8 (cadastro, login e lista de livros) e foi estendido na Aula 9 para demonstrar **animações implícitas e explícitas, Hero animation, Material Design 3, widgets customizados reutilizáveis e CustomPainter**.
+[Ads 5 FAse]
+
+## Nome da unidade curricular
+
+[Desenvolvimento Mobile]
+
+## Alunos
+
+- [Eduardo Jhonathan Passos Neumann](https://github.com/EdNeu123)
+- [Iago Rech Tramontin](https://github.com/I4g0m1t0)
 
 ---
 
-## Fluxo de navegação
+## Sobre o projeto
 
-```
-Cadastro ──(push)──→ Login ──(pushAndRemoveUntil)──→ Home ──(push)──→ Detalhe do Livro
-                                                       (pilha limpa,
-                                                        sem voltar)
-```
+O app tem uma tela inicial com um campo de busca por título ou autor. Enquanto
+o usuário não busca nada, é exibida uma vitrine de livros (assunto "fiction")
+vinda da própria API, já com scroll infinito. Ao tocar em um livro, um pop-up
+mostra os detalhes (capa, autor, ano, número de edições, sinopse e assuntos).
+Cada livro pode ser marcado como favorito direto no card — os favoritos são
+salvos em um banco SQLite local e ficam disponíveis em uma tela própria,
+mesmo depois de fechar o app.
 
----
+## Funcionalidades
 
-## Requisitos da Aula 9 — onde cada um está
+- 🔎 Busca por título ou autor, com debounce (não dispara uma requisição a
+  cada tecla digitada) e botão para limpar a busca e voltar à vitrine inicial.
+- 📖 Vitrine inicial e resultados de busca com **scroll infinito** (carrega
+  20 livros por vez, sempre que o usuário chega perto do fim da lista).
+- 🖼️ Cards com capa, título e autor, em grid de 2 colunas.
+- 📋 Pop-up de detalhes com capa, autor, ano de publicação, número de
+  edições, sinopse e assuntos relacionados.
+- ❤️ Favoritar/desfavoritar direto pelo card (ícone de coração sobre a capa).
+- 📁 Tela de **Favoritos**, acessível pela barra superior, com os livros
+  salvos localmente — permite remover um favorito direto por lá.
+- ⏳ Indicadores de carregamento, mensagens de erro com botão de
+  "Tentar novamente" e mensagens de "nenhum resultado encontrado".
+- 🔄 Puxar para atualizar (`RefreshIndicator`) na listagem e nos favoritos.
 
-| Requisito | Implementação |
+## Tecnologias utilizadas
+
+| Tecnologia | Uso no projeto |
 |---|---|
-| **1. Animação implícita** | `AnimatedOpacity` nas mensagens de erro (Cadastro/Login) — fade suave de 300ms. `AnimatedContainer` no card de status da tela de detalhe — muda cor, padding e `borderRadius` em 400ms com `Curves.easeInOut` ao marcar o livro como lido. |
-| **2. Animação explícita** | `DetalheLivroScreen`: `AnimationController` (1200ms, `SingleTickerProviderStateMixin`) + `Tween<double>(begin: 0.0, end: livro.progresso)` + `CurvedAnimation(curve: Curves.easeOutCubic)` + `AnimatedBuilder`. `dispose()` do controller é chamado corretamente. |
-| **3. Hero Animation** | Ícone do livro "voa" do `LivroCard` (Home) até o cabeçalho do `DetalheLivroScreen`. Cada livro tem uma `tag` única (`livro.id` — `livro-1`, `livro-2`, ...). |
-| **4. Material Design 3** | `useMaterial3: true` + `ColorScheme.fromSeed(seedColor: Colors.indigo)` no `main.dart`, com tema claro e escuro. Componente M3 utilizado: `FilledButton` (dentro do `BotaoPrimario`). |
-| **5. Widget customizado** | Dois widgets com `const` constructor e parâmetros: `BotaoPrimario` (usado em Cadastro, Login e Detalhe — 3 lugares) e `LivroCard` (usado na Home e na seção "Outros livros" da tela de detalhe — 2 lugares). |
-| **🌟 BÔNUS — CustomPainter** | `ProgressoCircularPainter` desenha um círculo de fundo com `drawCircle` e um arco de progresso com `drawArc`. Implementa `shouldRepaint` corretamente (só redesenha quando o progresso ou as cores mudam). |
+| **Flutter / Dart** | Framework e linguagem do app |
+| **http** | Requisições à API pública da Open Library |
+| **sqflite** + **sqflite_common_ffi** | Armazenamento local dos favoritos (SQLite nativo em Android/iOS, e via FFI em Windows/Linux/macOS para testes em desktop) |
+| **path** | Montagem do caminho do banco SQLite local |
+| **Material Design 3** | Tema claro/escuro do app |
 
----
+### API pública utilizada
+
+- Listagem inicial: `GET https://openlibrary.org/subjects/fiction.json?limit=20&offset=...`
+- Busca por título/autor: `GET https://openlibrary.org/search.json?q=...&page=...`
+- Detalhes de um livro: `GET https://openlibrary.org/works/{id}.json`
+- Capas: `https://covers.openlibrary.org/b/id/{cover_id}-M.jpg`
 
 ## Estrutura do projeto
 
 ```
 lib/
-├── main.dart                              # Tema M3 (claro + escuro)
-├── models/
-│   └── livro.dart                         # Modelo com id, titulo, autor, progresso, sinopse
-├── widgets/
-│   ├── botao_primario.dart                # Widget customizado #1 (FilledButton)
-│   └── livro_card.dart                    # Widget customizado #2 (contém o Hero)
-├── painters/
-│   └── progresso_circular_painter.dart    # CustomPainter (bônus)
-└── screens/
-    ├── cadastro_screen.dart               # BotaoPrimario + AnimatedOpacity
-    ├── login_screen.dart                  # BotaoPrimario + AnimatedOpacity
-    ├── home_screen.dart                   # LivroCard + Hero origem
-    └── detalhe_livro_screen.dart          # Hero destino + Controller + AnimatedContainer + CustomPainter
+  main.dart                        # MaterialApp, tema, tela inicial
+  models/
+    book.dart                      # Livro (listagem) + conversão para SQLite
+    book_detail.dart                # Detalhes completos de um livro
+  services/
+    open_library_service.dart      # Consumo da API pública (busca e listagem)
+    favorites_database.dart        # Acesso ao SQLite local (favoritos)
+  screens/
+    busca_screen.dart              # Tela inicial: busca + vitrine + scroll infinito
+    favoritos_screen.dart          # Tela de favoritos salvos localmente
+  widgets/
+    book_card.dart                 # Card reutilizável (grid de busca e de favoritos)
+    book_details_dialog.dart       # Pop-up de detalhes do livro
 ```
 
----
+## Como instalar e rodar o app
 
-## Detalhamento das animações
+1. Instale o [Flutter SDK](https://docs.flutter.dev/get-started/install).
+2. Clone o repositório:
+   ```bash
+   git clone <url-do-repositorio>
+   cd controle_de_leitura_animado-main
+   ```
+3. Instale as dependências:
+   ```bash
+   flutter pub get
+   ```
+4. Rode o app (emulador Android ou dispositivo físico conectado via USB, com
+   a depuração USB ativada):
+   ```bash
+   flutter run
+   ```
 
-### Na tela de detalhe (onde mora a maior parte)
+> No Windows, se aparecer erro de Gradle/Java ao rodar num Android físico,
+> garanta que o `flutter config --jdk-dir` aponte para um JDK 17+
+> (`flutter doctor -v` mostra o que está configurado).
 
-1. **Ao abrir a tela**, o `AnimationController.forward()` dispara e o arco de progresso circular preenche de 0% até o progresso real do livro — desacelerando no final (`easeOutCubic`) em 1200ms.
-2. **O `AnimatedBuilder`** reconstrói apenas o `CustomPaint`, não a árvore inteira — padrão recomendado para performance.
-3. **Ao tocar em "Marcar como lido"**, o `AnimatedContainer` do card de status anima (cor, padding e borda arredondada) em 400ms, e um novo `Tween` é criado para animar o arco até 100%.
-4. **O Hero** do ícone do livro anima automaticamente da Home para o centro do círculo de progresso.
+## Organização do trabalho em equipe
 
-### Nas telas de autenticação
-
-- Mensagens de erro aparecem com `AnimatedOpacity` em 300ms, em vez de "piscar" na tela.
-
----
-
-## Como executar
-
-```bash
-git clone https://github.com/EdNeu123/controle-leitura-flutter.git
-cd controle-leitura-flutter
-flutter pub get
-flutter run
-```
-
----
-
-## Conceitos utilizados
-
-- **Dart**: classes, construtores com parâmetros nomeados, `const` constructors, `late`
-- **Flutter Widgets**: Scaffold, AppBar, Column, Row, Text, TextField, FilledButton, Icon, Container, Card, InkWell, ListView.builder, SingleChildScrollView, LinearProgressIndicator, Stack, SizedBox, ClipRRect
-- **Animações implícitas**: AnimatedContainer, AnimatedOpacity
-- **Animações explícitas**: AnimationController, Tween, CurvedAnimation, AnimatedBuilder, SingleTickerProviderStateMixin
-- **Hero Animation**: transição entre telas com tag única
-- **Material Design 3**: ColorScheme.fromSeed, FilledButton, primaryContainer/onPrimaryContainer, surfaceContainer, tema claro e escuro
-- **Desenho customizado**: CustomPainter, Canvas.drawCircle, Canvas.drawArc, Paint (stroke, strokeCap, strokeWidth), shouldRepaint
-- **Gerenciamento de estado**: StatefulWidget, setState
-- **Ciclo de vida**: initState (iniciar controller), dispose (liberar controller e TextEditingControllers)
-- **Navegação**: Navigator.push, Navigator.pushReplacement, Navigator.pushAndRemoveUntil
-
----
-
-## Screenshots
-
-Screenshots das telas de Cadastro, Login e Home do projeto base estão em `screenshots/`. Para a Aula 9, recomenda-se adicionar capturas demonstrando a transição Hero e o arco de progresso animado.
+- Cada integrante ficou responsável por uma frente do projeto (estrutura e
+  navegação, integração com a API, armazenamento local/favoritos, interface
+  e ajustes finais).
+- Cada membro abriu pelo menos um Pull Request com sua parte, revisado pelo
+  grupo antes de ser integrado à branch principal.
+- Commits organizados e descritivos, refletindo o progresso de cada etapa
+  (estrutura → API → detalhes/favoritos → armazenamento local → ajustes finais).

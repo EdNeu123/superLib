@@ -314,7 +314,7 @@ class _BuscaScreenState extends State<BuscaScreen> {
         // mainAxisExtent fixa a altura da linha — mais previsível que
         // childAspectRatio para um card com texto de tamanho variável.
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
           mainAxisExtent: 100,
