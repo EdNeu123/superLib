@@ -2,9 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import '../models/book.dart';
+import '../services/favorites_database.dart';
 import '../services/open_library_service.dart';
 import '../widgets/book_card.dart';
 import '../widgets/book_details_dialog.dart';
+import 'favoritos_screen.dart';
 
 /// Tela inicial do app.
 ///
@@ -29,6 +31,7 @@ class _BuscaScreenState extends State<BuscaScreen> {
   Timer? _debounce;
 
   final List<Book> _books = [];
+  Set<String> _favoriteKeys = {};
 
   // Quando null, estamos mostrando a vitrine por assunto.
   // Quando preenchida, estamos mostrando resultado de busca.
@@ -47,6 +50,7 @@ class _BuscaScreenState extends State<BuscaScreen> {
     super.initState();
     _scrollController.addListener(_onScroll);
     _loadFirstPage();
+    _loadFavoriteKeys();
   }
 
   @override
@@ -82,6 +86,59 @@ class _BuscaScreenState extends State<BuscaScreen> {
     _searchController.clear();
     setState(() => _query = null);
     _loadFirstPage();
+  }
+
+  Future<void> _loadFavoriteKeys() async {
+    try {
+      final keys = await FavoritesDatabase.instance.getFavoriteKeys();
+      if (mounted) setState(() => _favoriteKeys = keys);
+    } catch (_) {
+      // Se o banco local falhar (ex: plataforma sem suporte), a busca
+      // continua funcionando normalmente — só os favoritos ficam indisponíveis.
+    }
+  }
+
+  Future<void> _toggleFavorite(Book book) async {
+    final eraFavorito = _favoriteKeys.contains(book.workKey);
+
+    // Atualiza a UI imediatamente (otimista) e só desfaz se o banco falhar.
+    setState(() {
+      if (eraFavorito) {
+        _favoriteKeys.remove(book.workKey);
+      } else {
+        _favoriteKeys.add(book.workKey);
+      }
+    });
+
+    try {
+      if (eraFavorito) {
+        await FavoritesDatabase.instance.removeFavorite(book.workKey);
+      } else {
+        await FavoritesDatabase.instance.addFavorite(book);
+      }
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        if (eraFavorito) {
+          _favoriteKeys.add(book.workKey);
+        } else {
+          _favoriteKeys.remove(book.workKey);
+        }
+      });
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Não foi possível salvar o favorito.')),
+      );
+    }
+  }
+
+  Future<void> _abrirFavoritos() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const FavoritosScreen()),
+    );
+    // Ao voltar da tela de favoritos, o usuário pode ter removido algum
+    // — recarrega as chaves pra manter os corações da listagem em dia.
+    _loadFavoriteKeys();
   }
 
   Future<BookPage> _fetchPage({required bool isFirstPage}) {
@@ -153,6 +210,13 @@ class _BuscaScreenState extends State<BuscaScreen> {
       appBar: AppBar(
         title: const Text('Livros'),
         automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            tooltip: 'Favoritos',
+            onPressed: _abrirFavoritos,
+          ),
+        ],
       ),
       body: Column(
         children: [
@@ -274,7 +338,9 @@ class _BuscaScreenState extends State<BuscaScreen> {
           final book = _books[index];
           return BookCard(
             book: book,
+            isFavorite: _favoriteKeys.contains(book.workKey),
             onTap: () => showBookDetailsDialog(context, book),
+            onToggleFavorite: () => _toggleFavorite(book),
           );
         },
       ),

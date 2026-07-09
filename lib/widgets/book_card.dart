@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
 import '../models/book.dart';
 
-/// Card usado no grid de livros (3 colunas): capa pequena à esquerda,
-/// título e autor à direita. Ao tocar, abre o pop-up de detalhes — [onTap].
+/// Card usado no grid de livros (3 colunas): capa à esquerda (com botão de
+/// favorito sobreposto), título e autor à direita. Ao tocar no card, abre
+/// o pop-up de detalhes — [onTap]. Ao tocar no coração, marca/desmarca
+/// como favorito — [onToggleFavorite].
 class BookCard extends StatelessWidget {
   final Book book;
+  final bool isFavorite;
   final VoidCallback onTap;
+  final VoidCallback onToggleFavorite;
 
-  const BookCard({super.key, required this.book, required this.onTap});
+  const BookCard({
+    super.key,
+    required this.book,
+    required this.isFavorite,
+    required this.onTap,
+    required this.onToggleFavorite,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,16 +32,29 @@ class BookCard extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Hero(
-                tag: book.workKey,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(6),
-                  child: SizedBox(
-                    width: 56,
-                    height: 82,
-                    child: _Cover(book: book, cores: cores),
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Hero(
+                    tag: book.workKey,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(6),
+                      child: SizedBox(
+                        width: 56,
+                        height: 82,
+                        child: _Cover(book: book, cores: cores),
+                      ),
+                    ),
                   ),
-                ),
+                  Positioned(
+                    top: -4,
+                    right: -4,
+                    child: _FavoriteButton(
+                      isFavorite: isFavorite,
+                      onTap: onToggleFavorite,
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(width: 8),
               Expanded(
@@ -69,6 +92,33 @@ class BookCard extends StatelessWidget {
   }
 }
 
+class _FavoriteButton extends StatelessWidget {
+  final bool isFavorite;
+  final VoidCallback onTap;
+
+  const _FavoriteButton({required this.isFavorite, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      behavior: HitTestBehavior.opaque,
+      child: Container(
+        padding: const EdgeInsets.all(4),
+        decoration: const BoxDecoration(
+          color: Colors.black54,
+          shape: BoxShape.circle,
+        ),
+        child: Icon(
+          isFavorite ? Icons.favorite : Icons.favorite_border,
+          size: 14,
+          color: isFavorite ? Colors.redAccent : Colors.white,
+        ),
+      ),
+    );
+  }
+}
+
 class _Cover extends StatelessWidget {
   final Book book;
   final ColorScheme cores;
@@ -92,8 +142,8 @@ class _Cover extends StatelessWidget {
           color: cores.surfaceContainerHighest,
           child: const Center(
             child: SizedBox(
-              width: 12,
-              height: 12,
+              width: 16,
+              height: 16,
               child: CircularProgressIndicator(strokeWidth: 2),
             ),
           ),
