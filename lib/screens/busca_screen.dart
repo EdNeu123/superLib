@@ -253,7 +253,7 @@ class _BuscaScreenState extends State<BuscaScreen> {
           crossAxisCount: 3,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
-          mainAxisExtent: 96,
+          mainAxisExtent: 100,
         ),
         // +1 para o indicador de "carregando mais" no fim da lista.
         itemCount: _books.length + (_hasMore ? 1 : 0),
