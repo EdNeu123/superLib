@@ -1,0 +1,822 @@
+{
+   "checksum": "210c2a28d24f4d147af13b4b4be99d7e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13353206569832352",
+               "date_last_used": "13391361047449199",
+               "guid": "ffabe9de-148b-46e2-9514-9dd14000ac61",
+               "id": "8",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Google Acadêmico",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://scholar.google.pt/schhp?hl=pt-BR&as_sdt=0,5",
+               "visit_count": 1
+            }, {
+               "date_added": "13353206594992173",
+               "date_last_used": "13374973182430559",
+               "guid": "4785cb66-d068-4691-980d-0de2cf190f4c",
+               "id": "9",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "google livros - Pesquisar",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.bing.com/search?pglt=43&q=google+livros&cvid=4914c985289646959ead51af61094cd3&gs_lcrp=EgZjaHJvbWUqBggBEAAYQDIGCAAQRRg5MgYIARAAGEAyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQDIHCAkQRRj8VdIBCDMwNzBqMGoxqAIAsAIA&FORM=ANNAB1&PC=U531",
+               "visit_count": 1
+            }, {
+               "children": [ {
+                  "date_added": "13353208046792352",
+                  "date_last_used": "13398914845260343",
+                  "guid": "4077a1ba-1e18-46e7-8961-43f6a39f46ba",
+                  "id": "11",
+                  "meta_info": {
+                     "power_bookmark_meta": ""
+                  },
+                  "name": "Sistemas de recomendação: como funcionam e exemplos práticos",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "https://blog.somostera.com/data-science/sistemas-de-recomendacao",
+                  "visit_count": 1
+               } ],
+               "date_added": "13353208061408364",
+               "date_last_used": "0",
+               "date_modified": "13353208061408364",
+               "guid": "29037775-e412-4d8b-9fb8-1cc83db39cf7",
+               "id": "10",
+               "name": "Pesquisas modelagem de dados",
+               "source": "unknown",
+               "type": "folder"
+            }, {
+               "date_added": "13398009422975441",
+               "date_last_used": "13399511213126280",
+               "guid": "fc68b592-bc4e-44d6-9082-d34bc474e073",
+               "id": "12",
+               "name": "ORCID",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://orcid.org/",
+               "visit_count": 3
+            }, {
+               "date_added": "13422586719963209",
+               "date_last_used": "0",
+               "guid": "45afbc44-0b57-4dac-b5b0-5e459af344ba",
+               "id": "13",
+               "name": "Jogo de Gestão de Recursos Web - Google Gemini",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://gemini.google.com/app/be8ed503c96d45ff",
+               "visit_count": 0
+            }, {
+               "date_added": "13426643612135882",
+               "date_last_used": "0",
+               "guid": "f2a3fe05-0861-48ec-9f93-912d689a4009",
+               "id": "14",
+               "name": "CNPq — Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.gov.br/cnpq/pt-br",
+               "visit_count": 1
+            }, {
+               "date_added": "13426643615280424",
+               "date_last_used": "0",
+               "guid": "37b780a0-99b2-49d8-8c4c-234bd65e66ff",
+               "id": "15",
+               "name": "Bolsas no País e no Exterior — Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.gov.br/cnpq/pt-br/acesso-a-informacao/bolsas-e-auxilios/copy_of_modalidades",
+               "visit_count": 1
+            }, {
+               "date_added": "13426643618552613",
+               "date_last_used": "0",
+               "guid": "ce7fce2c-e53f-4b48-ba0c-5d656a3cea20",
+               "id": "16",
+               "name": "Cartão Pesquisa — Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.gov.br/cnpq/pt-br/acesso-a-informacao/bolsas-e-auxilios/auxilios-cartao-pesquisa",
+               "visit_count": 1
+            }, {
+               "date_added": "13426643622792373",
+               "date_last_used": "0",
+               "guid": "e8f3d3fe-07b2-498d-bfa8-6d58d0903165",
+               "id": "17",
+               "name": "Bolsistas Egressos (Exterior) — Conselho Nacional de Desenvolvimento Científico e Tecnológico",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.gov.br/cnpq/pt-br/acesso-a-informacao/bolsas-e-auxilios/bolsistas-egressos",
+               "visit_count": 1
+            } ],
+            "date_added": "13353206587064209",
+            "date_last_used": "0",
+            "date_modified": "13426643622792373",
+            "guid": "218993d1-8c06-42f3-94c6-3b96e811952e",
+            "id": "7",
+            "name": "ONDE PESQUISAR",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13356489914241124",
+               "date_last_used": "0",
+               "guid": "80b6ffdd-72be-44fc-bf53-9019fbd7031a",
+               "id": "19",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Torre de Hanói - Só Matemática",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.somatematica.com.br/jogos/hanoi/",
+               "visit_count": 0
+            } ],
+            "date_added": "13356489881311911",
+            "date_last_used": "0",
+            "date_modified": "13356489914241124",
+            "guid": "6388ba03-113c-4ac8-8c5f-14691fe807e1",
+            "id": "18",
+            "name": "LOGICA",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13354581095526516",
+            "date_last_used": "13427849447569977",
+            "guid": "e8bebeaf-12fb-409f-8b6f-98bcd3ea79f2",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "WhatsApp",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://web.whatsapp.com/",
+            "visit_count": 357
+         }, {
+            "date_added": "13354668858614864",
+            "date_last_used": "13427417059562156",
+            "guid": "daaec7c8-a38f-4cb9-9f50-b16b2d6645f3",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Email – EDUARDO JHONATHAN PASSOS NEUMANN – Outlook",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://outlook.office.com/mail/inbox/id/AAQkAGIwMTU5ZDhjLWIxZDgtNDVmZC05YWZmLWNhOTM5NjE0MjI1NAAQABQy17WouN1Brw0OfuKlJCA%3D",
+            "visit_count": 51
+         }, {
+            "date_added": "13355015807442821",
+            "date_last_used": "13403975036267253",
+            "guid": "ee220b94-3ff4-44fc-96d3-849b7fd80936",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "DrawSQL - 🔥 Database schema diagrams",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drawsql.app/",
+            "visit_count": 4
+         }, {
+            "date_added": "13366164531737803",
+            "date_last_used": "13416447115967067",
+            "guid": "c06a771e-3fed-4375-a78b-085fc559fd53",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Software online de diagramas e comunicação visual | Lucidchart",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.lucidchart.com/pages/pt",
+            "visit_count": 3
+         }, {
+            "date_added": "13355128281551606",
+            "date_last_used": "13409694711709862",
+            "guid": "750292bf-f997-4ae3-961f-9bf1cce8d165",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "myCompiler - Um IDE online para C, C++, Java, Python, Go, NodeJS e outras linguagens",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.mycompiler.io/pt",
+            "visit_count": 1
+         }, {
+            "date_added": "13355761981005488",
+            "date_last_used": "13404009671263739",
+            "guid": "44f83dfa-e820-47f0-a15b-efe4c0ffe624",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Speedometer 3",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.browserbench.org/Speedometer3.0/",
+            "visit_count": 2
+         }, {
+            "date_added": "13355882184747485",
+            "date_last_used": "13419385453371036",
+            "guid": "6ba6a1f3-f35a-4b53-8305-92ccae3ab4b1",
+            "id": "26",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Krunker",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://krunker.io/",
+            "visit_count": 6
+         }, {
+            "date_added": "13357776383175186",
+            "date_last_used": "0",
+            "guid": "f13d25fd-3cab-4cf2-a13d-e3211d3c166e",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "C++ - OneCompiler - Write, run and share C++ code online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://onecompiler.com/cpp",
+            "visit_count": 0
+         }, {
+            "date_added": "13357782991401374",
+            "date_last_used": "13422500940956647",
+            "guid": "8aa82c28-1c62-43ac-93b9-fd21042d31cd",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Início - Chess.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.chess.com/home",
+            "visit_count": 1
+         }, {
+            "date_added": "13358000681418775",
+            "date_last_used": "13402454012303660",
+            "guid": "d47f4890-be7a-4830-94d3-f1714beac49e",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "FIGMA",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.figma.com/",
+            "visit_count": 34
+         }, {
+            "date_added": "13359509091114653",
+            "date_last_used": "13425694253970296",
+            "guid": "818549aa-ded7-4bad-9fdf-89fe28e6ccab",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Outlook",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://outlook.office365.com/mail/",
+            "visit_count": 28
+         }, {
+            "date_added": "13359599114562624",
+            "date_last_used": "13398214013879258",
+            "guid": "05e749fe-28ba-4016-ada6-87df632fb2fc",
+            "id": "31",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Microsoft Forms",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://forms.office.com/Pages/DesignPageV2.aspx?origin=shell",
+            "visit_count": 15
+         }, {
+            "date_added": "13360206577862748",
+            "date_last_used": "13379011344110931",
+            "guid": "f3bb00b3-6b95-4480-8d2f-6628e62b917a",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Aplicativo de Entrega de Comida:",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=EP4XCdtWv0SxxTEGGrIc-eOZiiHwnjBGjIG6Tet2SghURE9GTEJESVdFWjFaUEw2MUlVOEZaRERTOS4u",
+            "visit_count": 1
+         }, {
+            "date_added": "13370573234056838",
+            "date_last_used": "0",
+            "guid": "4f04b2dd-f327-45b4-8487-2c7f93a0fc57",
+            "id": "33",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "YH1d3k12 (YH1d3k12) / Repositories",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/YH1d3k12?tab=repositories",
+            "visit_count": 1
+         }, {
+            "date_added": "13370573237007185",
+            "date_last_used": "0",
+            "guid": "7eae740b-3886-45f9-9fa9-8e9b7c68f514",
+            "id": "34",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "XT07 (XT07) / Repositories",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/XT07?tab=repositories",
+            "visit_count": 1
+         }, {
+            "date_added": "13371799160002228",
+            "date_last_used": "0",
+            "guid": "da3e0fe0-11f2-4613-88a9-d589b1cdab97",
+            "id": "35",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Funil11.xlsx",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://senacsc754-my.sharepoint.com/:x:/r/personal/eduardo_neumann_alunos_sc_senac_br/_layouts/15/Doc.aspx?sourcedoc=%7Bf0206622-3849-403f-af6c-6a550e9c505d%7D&action=edit&wdorigin=BrowserReload&wdenableroaming=1&wdodb=1&wdlcid=pt-BR&wdredirectionreason=Force_SingleStepBoot&wdinitialsession=ee9eab9a-83f9-2a8d-1fb3-d4efebdf362c&wdrldsc=3&wdrldc=1&wdrldr=ContinueInExcel",
+            "visit_count": 1
+         }, {
+            "date_added": "13380142878709964",
+            "date_last_used": "13395019378201703",
+            "guid": "0b9e06ca-ff60-49c8-aecd-ef4cea5682b9",
+            "id": "36",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "OneDrive",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9jMWZiYjRkMmJhZjBkNjg0L0VqMFJZOW4wSGFORGhYc0t1elVsQTJZQmZUUE0ySFMtOUl3TW1aUVZqcnJ1cXc%5FZT1XRktnYkY&id=C1FBB4D2BAF0D684%21sd963113d1df443a3857b0abb35250366&cid=C1FBB4D2BAF0D684&v=validatepermission",
+            "visit_count": 2
+         }, {
+            "date_added": "13381862013591922",
+            "date_last_used": "0",
+            "guid": "625fb356-c3ab-47e5-b73c-af6512dc1917",
+            "id": "37",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Backend Dashboard",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://backend.back4app.com/apps/9cf40b5d-d3dc-48f1-b65b-8be8bf05dda6/browser/_User",
+            "visit_count": 1
+         }, {
+            "date_added": "13385091134187529",
+            "date_last_used": "13400898138819613",
+            "guid": "2e4374f5-e160-439b-85d4-35f274f2496b",
+            "id": "38",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Loading...",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://convai.com/auth/login",
+            "visit_count": 3
+         }, {
+            "children": [ {
+               "date_added": "13385866236969152",
+               "date_last_used": "0",
+               "guid": "69b780a9-6127-4d73-9009-09d632711e7a",
+               "id": "40",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Trae.ai - Official IA Tiktok Code editor",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.trae.chat/",
+               "visit_count": 1
+            }, {
+               "date_added": "13386292212076260",
+               "date_last_used": "0",
+               "guid": "2e537c5b-5da2-4cc9-964a-2e3df552d3df",
+               "id": "41",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "W3Schools Online Web Tutorials",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.w3schools.com/",
+               "visit_count": 1
+            }, {
+               "date_added": "13387071058709954",
+               "date_last_used": "0",
+               "guid": "05a7c663-4810-4662-befe-d47170f1af3a",
+               "id": "42",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "JavaScript Tutorial",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.w3schools.com/js/default.asp",
+               "visit_count": 1
+            }, {
+               "children": [  ],
+               "date_added": "13388884702391910",
+               "date_last_used": "0",
+               "date_modified": "13388884702391910",
+               "guid": "453a1803-1250-4002-aac5-11aae9a4f93b",
+               "id": "43",
+               "name": "Nova pasta",
+               "source": "unknown",
+               "type": "folder"
+            } ],
+            "date_added": "13385866260918299",
+            "date_last_used": "0",
+            "date_modified": "13387071058709954",
+            "guid": "43d2ee9a-e13f-45ef-a5d0-161348ddd85d",
+            "id": "39",
+            "name": "FERRAMENTAS",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13388884600992110",
+               "date_last_used": "0",
+               "guid": "76cbbfae-2a4c-4776-acfb-ecb05df20b93",
+               "id": "45",
+               "name": "JavaScript | MDN",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+               "visit_count": 1
+            }, {
+               "date_added": "13389149123006004",
+               "date_last_used": "0",
+               "guid": "0657af70-3995-47a8-b3d2-3579252b7331",
+               "id": "46",
+               "name": "Configuração MySQL com Sequelize",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://chatgpt.com/c/67f4600e-762c-8010-a3ff-abd701aacae0",
+               "visit_count": 1
+            }, {
+               "date_added": "13390505761868812",
+               "date_last_used": "13392435343160468",
+               "guid": "718a450f-f71e-4b20-a150-36125d90b7b5",
+               "id": "47",
+               "name": "SEI [Sistema Escolar Integrado] - Santa Catarina",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://sei.sc.senac.br/modulos.php?mnome=home&arq=auth&logout=true&rd=2",
+               "visit_count": 2
+            }, {
+               "date_added": "13399602615512708",
+               "date_last_used": "13425612595698049",
+               "guid": "b7cae00d-8226-49ef-95bd-e198863495c0",
+               "id": "48",
+               "name": "Engenharia de Software Moderna - Livro digital",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://engsoftmoderna.info/",
+               "visit_count": 2
+            } ],
+            "date_added": "13388884702392154",
+            "date_last_used": "0",
+            "date_modified": "13399602615512708",
+            "guid": "4a8ef8e2-10d5-44af-a8bc-bc7d1de54a89",
+            "id": "44",
+            "name": "Documentação",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13391044125557035",
+               "date_last_used": "0",
+               "guid": "566e4c02-800b-49c5-8bfe-f9178b1df33f",
+               "id": "50",
+               "name": "React Native: desenvolvendo com Expo | Fokus (Community) – Figma",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.figma.com/design/xCm0rEfuP21cTctixSXQqq/React-Native--desenvolvendo-com-Expo-%7C-Fokus--Community-?node-id=1702-558&p=f&t=QYDEoahAmsg75rMI-0",
+               "visit_count": 1
+            } ],
+            "date_added": "13391044163604872",
+            "date_last_used": "0",
+            "date_modified": "13391044163604872",
+            "guid": "5938631b-2e5b-44bd-9bbe-0ee9a8b01662",
+            "id": "49",
+            "name": "Figma pro React",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13391269059098563",
+               "date_last_used": "0",
+               "guid": "b4958146-b7da-40fb-adc0-81e0c8984063",
+               "id": "52",
+               "name": "ApplicantSite",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://applicants.bairesdev.com/job/80/282226/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&lang=pt",
+               "visit_count": 1
+            }, {
+               "date_added": "13391269071016258",
+               "date_last_used": "0",
+               "guid": "530917f4-e15f-4ebd-8218-7c52aaa34ba8",
+               "id": "53",
+               "name": "Analista de Suporte Técnico L1",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://goto.wd5.myworkdayjobs.com/en-US/GoToCareers/job/Remote-(Brazil)/Bilingual-Customer-Support-Specialist_R25-1297/apply/LinkedIn",
+               "visit_count": 1
+            }, {
+               "date_added": "13391269310480319",
+               "date_last_used": "0",
+               "guid": "0ffaeb0f-86f5-46c3-bc8d-531097f5625f",
+               "id": "54",
+               "name": "Brisanet - [RPMEAA] Assistente de Sistemas",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://brisanet.jobs.recrut.ai/job/RPMEAA?source=linkedin",
+               "visit_count": 1
+            }, {
+               "date_added": "13393090094569907",
+               "date_last_used": "0",
+               "guid": "75ad90fc-452f-4471-a18c-c5825b06c0a2",
+               "id": "55",
+               "name": "PGMEI - Programa Gerador de DAS do Microempreendedor Individual",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www8.receita.fazenda.gov.br/SimplesNacional/Aplicacoes/ATSPO/pgmei.app/emissao",
+               "visit_count": 1
+            }, {
+               "date_added": "13397928758485718",
+               "date_last_used": "0",
+               "guid": "578a86cb-ccad-4124-96b4-c5e1f31200ff",
+               "id": "56",
+               "name": "Início",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://www.midscobr.com.br/odoo",
+               "visit_count": 1
+            } ],
+            "date_added": "13391269066368251",
+            "date_last_used": "0",
+            "date_modified": "13397928758485718",
+            "guid": "dee3a898-cafd-4733-96f5-46403272eb1f",
+            "id": "51",
+            "name": "Jobs",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13392253871934386",
+            "date_last_used": "13406767940208340",
+            "guid": "284303b3-a6c6-4234-a410-50e26b959f5b",
+            "id": "57",
+            "name": "YH1d3k12/Projeto-Familia-Esperanca",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/YH1d3k12/Projeto-Familia-Esperanca",
+            "visit_count": 5
+         }, {
+            "date_added": "13392954206586107",
+            "date_last_used": "13418345228941480",
+            "guid": "12598162-c113-45b9-ae82-ab25d8bf8066",
+            "id": "58",
+            "name": "Automação de Divisão de Épicos",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chatgpt.com/c/6837b0d7-93f8-8010-b3b9-e567fd04bf4e",
+            "visit_count": 2
+         }, {
+            "date_added": "13392954252523678",
+            "date_last_used": "13398914837033503",
+            "guid": "1d9dd4e3-c174-4f19-8990-9c62bb2b60df",
+            "id": "59",
+            "name": "Modelo Pitch (2).pptx",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://senacsc754-my.sharepoint.com/:p:/r/personal/sonia_alves_prof_sc_senac_br/_layouts/15/Doc.aspx?sourcedoc=%7BE70255B2-1654-46E4-B894-AFD02ABF296A%7D&file=Modelo%20Pitch%20(2).pptx&action=edit&mobileredirect=true",
+            "visit_count": 2
+         }, {
+            "date_added": "13395543332831492",
+            "date_last_used": "13397934626243362",
+            "guid": "4d423512-83fd-4ec8-ad21-1151374bae73",
+            "id": "60",
+            "name": "Analise este código (eu sei q ta tudo errado, mas é o que temos) e termine o...",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.perplexity.ai/search/analise-este-codigo-eu-sei-q-t-cblaBTbtQQWIsM9tZEZ2Ug",
+            "visit_count": 2
+         }, {
+            "children": [ {
+               "date_added": "13398005711122781",
+               "date_last_used": "0",
+               "guid": "e1e7ed18-5f4e-46bc-bc26-1afe3e96b16c",
+               "id": "62",
+               "name": "v0 by Vercel",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://v0.dev/",
+               "visit_count": 1
+            }, {
+               "date_added": "13398005962762841",
+               "date_last_used": "0",
+               "guid": "5a94f573-c159-44eb-b6f9-4e0ad89c192d",
+               "id": "63",
+               "name": "Writing about frontend development and tech...",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://matheusmviana.vercel.app/blog",
+               "visit_count": 1
+            } ],
+            "date_added": "13398005721495050",
+            "date_last_used": "0",
+            "date_modified": "13398005962762841",
+            "guid": "6acafab4-8369-4934-9807-a256ccd19398",
+            "id": "61",
+            "name": "i.a",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13400296989269394",
+            "date_last_used": "0",
+            "guid": "a8e1f2bd-e4c5-46d7-8c36-5d3fb042fb10",
+            "id": "64",
+            "name": "Senac Santa Catarina",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://portal.sc.senac.br/",
+            "visit_count": 1
+         }, {
+            "date_added": "13401324609444218",
+            "date_last_used": "13404955628265908",
+            "guid": "81b0bfcc-d9d6-45d4-b379-763d1d14e71e",
+            "id": "65",
+            "name": "Tinkercad",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.tinkercad.com/",
+            "visit_count": 2
+         }, {
+            "children": [ {
+               "date_added": "13404482238012718",
+               "date_last_used": "13404525646408283",
+               "guid": "950e7f5b-6901-49d8-94d3-44105cabfa6b",
+               "id": "67",
+               "name": "YH1d3k12/secure-finances-app",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "https://github.com/YH1d3k12/secure-finances-app",
+               "visit_count": 3
+            } ],
+            "date_added": "13404482248518071",
+            "date_last_used": "0",
+            "date_modified": "13404482248518071",
+            "guid": "6cc7d971-2970-4d5e-b7e1-0fbe9b161ae9",
+            "id": "66",
+            "name": "trabalhos",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13409100626151257",
+               "date_last_used": "0",
+               "guid": "3984b591-bca1-4dda-b19b-dfcd63f1168e",
+               "id": "69",
+               "name": "Dell",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "http://www1.la.dell.com/content/default.aspx?c=la&l=en&s=gen",
+               "visit_count": 0
+            }, {
+               "date_added": "13409100626151257",
+               "date_last_used": "0",
+               "guid": "4ce07f3a-7f53-405b-bf5d-baace59fb413",
+               "id": "70",
+               "name": "Support.Dell.Com",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "http://www.dell.com/support/home",
+               "visit_count": 0
+            } ],
+            "date_added": "13409100651602313",
+            "date_last_used": "0",
+            "date_modified": "13409100651602313",
+            "guid": "13aa6c3b-ba0d-4d1a-9537-6d21dd82d403",
+            "id": "68",
+            "name": "Dell",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13428024934672271",
+         "date_last_used": "0",
+         "date_modified": "13401324609444218",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13428024934672271",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Outros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13428024934672271",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos do celular",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13428024934672271",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Espaços de trabalho",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CosBCg4IiIECEggVQPBDnwEAABIAGlgzcXBxTjhQTU56TmluYXJvV0x5V1orV3BnWFJCV2JGclo1WDM0bisxL25QR1VUQnhpVDZkOHd1S2xYTFZoUVVqUHJuN2Raa216TEN3WGVVc0JMLy9SUT09KhhDNldMWnltWExNUjByOVYzRFV2NktBPT1IA6AGCRKOAQgFEokBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiRjZTVjNDgxOC0yZWM0LTUwY2QtOGNkNi01NThkMGI1MWFiZWEYACAAKAAw2+jB25IzOPnqwduSM0D56sHbkjNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1aAGUAAAAAwj4CYAASjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkMzU4OGMxZmEtZDU5MS01YzU5LWE2ZmYtODBkYTM1MzcwNmQxGAAgACgAMLua8J/EMji099vA3TFAtPfbwN0xShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAEqwBCEYSpwEKHHg0TUpjMHJIWDFuUzdtYjZNSTZvM01VSi9wYz0SJDRjZTA3ZjNhLTdmNTMtNDA1Yi1iZjVkLWJhYWNlNTlmYjQxMxgAIAAoADDCmNPOzTM4oa/u360zQKGv7t+tM0ocS3BaYmJrbVJxM1plL3BJUDRIVWkrSGpkVGxFPVoeIhxRRVJhWGdOSW1MUGNaRnIvMEpnaUpVbkI1aUU9ZQAAAADCPgJgBRKsAQhFEqcBChxqNWdZWjhCUW5Pd2VXNWpVREdUdWxTYUFrRDA9EiQzOTg0YjU5MS1iY2ExLTRkZGEtYjE5Yi1kZmNkNjNmMTE2OGUYACAAKAAwwJjTzs0zOO6u7t+tM0Duru7frTNKHDdJUThiLy9nNmVQZlFnQVBPQ29oQ3k4dlBOWT1aHiIcQkJCaVpnL2pNUDNqNWtVRE1VMjZxNVhGUU44PWUAAAAAwj4CYAUStQEIRBKwAQocakFqMm4veWVtS1FudWl2NnZHRFVpY3lSb2x3PRIkMTNhYTZjM2ItYmEwZC00ZDFhLTk1MzctNmQyMWRkODJkNDAzGAAgACgAMM6I087NMzjHru7frTNAx67u360zShxHbGlpTUUzQjI1QUtMWG92Z0I5WGIrQzVJUGs9WiciJf////8AAAAEqkhvT01Bc2pWOFc2ZzlMTzZwQnVaU01Tdml4RT1lAAAAAMI+AmAAEqwBCEMSpwEKHGVRaFpsaVJLVVpMa2kyS3hGaGV2NEpkcTMvQT0SJDk1MGU3ZjViLTY5MDEtNDlkOC05NGQzLTQ0MTA1Y2FiZmE2YhgAIAAoADCxmNPOzTM44O/GxZwzQODvxsWcM0ocOER2VDZFSW9HVmtOaHQzekllbEh6MXpvSnFFPVoeIhxLS1N0N29hSXZkK3Fnei9SNCtGSHBFa1ZkMEk9ZdeRPTnCPgJgBRK0AQhCEq8BChxMZ1A4eGpRVjJIYitHM2thb0w2T3lSR2xJdU09EiQ2Y2M3ZDk3MS0yOTcwLTRkNWUtYjdlMS0wZmJlOWIxNjFhZTkYACAAKAAwzIjTzs0zOMy8x8WcM0DMvMfFnDNKHEdDUEUzYWd1MGpOTlpha2dVUFMyK3YxUVJkZz1aJiIk/////wAAAARVcHBBWnU5M0ZrbkZJWjQ4ZlVCNUN2M3hEYWM9ZQAAAADCPgJgABKtAQg/EqgBChxzRmJwRVhNRG0yb3RISGx2MXFYRVpBc0VYaVU9EiQ1YTk0ZjU3My1jMTU5LTQ0ZWItYjZmOS00ZTBhZDg5YzE5MmQYACAAKAAwp5jTzs0zOKSPsrWEM0Ckj7K1hDNKHFJXb044aXpaMDRqbWRHK3FuVHk5bHYzdTBHcz1aHyIdskxsNWNNZXpuQ082L09rZmphRzJRZkpCSW5Baz1lOk7Fz8I+AmAFErABCDwSqwEKHDAzYjkzcmdKOUNmYWJvZnR4SlZoWEFLM0NVYz0SJDRkNDIzNTEyLTgzZmQtNGVjOC1hZDIxLTExNTEzNzRiYWU3MxgAIAAoADC6mNPOzTM4jJKMn/syQIySjJ/7MkocZ0J6OE1BL2xDa0M2YnZtclBjbWk4cGZnaWdZPVoiIiD////3SVVRZWNxa3dKcHJBZFArZnVUV2tEOFlDZ2hBPWXzfLBNwj4CYAUSsAEIOhKrAQocTnNnemJOQ3VMSlhPakNFSStja1AzNHJxWTFnPRIkMTI1OTgxNjItYzExMy00NWI5LWFlODItYWIyNWQ4YmY4MDY2GAAgACgAMI6a9JfQMzimlsPM8TJAppbDzPEyShxMV3hLUzBsbzdJU1h3RnBOeG9jd1NsOWFtL0E9WiIiIP///9xJT21pTVdXK2x2RElMaU12aTJMemJxV0UyNHc9ZYal2MjCPgJgBRKwAQg5EqsBChxpV3JHek11NXRWNE5INEdMWGF4anhLb2Jydm89EiQyODQzMDNiMy1hNmM2LTQyMzQtYTQxMC01MGUyNmI5NTlmNWIYACAAKAAwgqz/3O8zOIHRwv7uMkCB0cL+7jJKHEJ1cUhxRkZIeXRxSVVCcXVnYTY2MEU5bnp2MD1aIiIg////uGdHV1JpMVhQaVFWdUtJQ01sTEFZNG9DZW5Kbz1l15E9OcI+AmAFErABCEESqwEKHEtLK2FoOFhIbmQ3QlM3MlFpMmJINU10dzZMND0SJDgxYjBiZmNjLWQ5ZDYtNDVkNC1iMzc5LTc2M2QxZDE0ZTcxZRgAIAAoADCzmNPOzTM4wITs45AzQMCE7OOQM0ocVGoyRlJFWDVtUzc0Y3NYdURydHp4azV4SDJjPVoiIiD////+ODRIaEsrV2JsOTM1Um50RERsSXlKcWpDM1RVPWUsa90twj4CYAUSrQEINxKoAQocdVZPaG1FNVJKQytjREtIem1oVWRPSVJPelZBPRIkNzVhZDkwZmMtNDUyZi00NDcxLWExOGMtYzU4MjViMDZjMGEyGAAgACgAMLKY087NMziWl9nZ/zJAlpfZ2f8yShxFNjdIcVVoRWdxMHdPYTR0eG15NTVzNHk0Nlk9Wh8iHd10SWlPZEt1MXNsT3lYRkEyS3kzY2RvMEJnbGM9ZeYLdb3CPgJgBRKtAQg2EqgBChxXanE0Nzd6RTFqNklqZTh5Mng2NDY3dzVzbGM9EiQwZmZhZWIwZi04NmY1LTQ2YzMtYmM4ZC01MzEwOTdmNTYyNWYYACAAKAAwo5jTzs0zOIPRkanrMkCD0ZGp6zJKHHl3ZnVCYkwveFJVQlZJOEhwVjJOb1IxYzhRdz1aHyIdulZlbHFpazkvRzFOTEQwZUtDdjNBTGs1aUV3WT1lU5fafcI+AmAFEqwBCDUSpwEKHDcyNDNxOUM3MjQ0aTBiRHpKY1ZEcTdJVVFFRT0SJDUzMDkxN2Y0LWUxNWYtNGViZC04MjE4LTdjNTJhYWEzNGJhOBgAIAAoADCmmNPOzTM4pIGDqesyQKSBg6nrMkocNTh0aFc2blV5LzFPMHJJeU1NdlBjbE50cHdFPVoeIhx1Y1lBeWVjUzZkMXBOYzVoUzcvZHdvQjJYeFk9ZeuyHTfCPgJgBRKwAQg9EqsBChx4czlEYThJYWxyUE5QTHFWWWtodGlDTjRmNEU9EiQ2YWNhZmFiNC04MzY5LTQ5MzQtOTgwNy1hMjU2Y2NkMTkzOTgYACAAKAAwyojTzs0zOLiyo7WEM0C4sqO1hDNKHG5vQis5Z2pvaGl3TjZSbm5OaFBQejdPLzVMdz1aIiIg////+1JycHcwUTQwRit3cU42UE82MU9KTHgwVEplND1lAAAAAMI+AmAAEqwBCDQSpwEKHENaVjErRjZRL1duQXdNeVE2NTVJM1pyRytabz0SJGI0OTU4MTQ2LWI3ZGEtNDBmYi1hZGMwLTgxZTBjODk4NDA2MxgAIAAoADCvmNPOzTM4lJ6CqesyQJSegqnrMkocNmQrTGhoZWdFcFV1VzE3OTdCZVBveWZDblNJPVoeIhxETFhpREFWaUNkRlUrekRETHFWVnFBM05MUkk9ZRA+GxzCPgJgBRKsAQgyEqcBChx0OXYwQW5tUlFZbVMzcVhlZGRTY2dpckQzcTg9EiQ1NjZlNGMwMi04MDBiLTQ5YzUtOGJmZS1mOTE3OGIxZGYzM2YYACAAKAAwo8qN1t8zOI7Y173qMkCO2Ne96jJKHDl5YzEzSVZKOG8zSzNOWXNBQzZlcUFFelNhTT1aHiIcV2RQWHRSZGM2OUpmeXVhRDhsbER6Ry9xTUVvPWXmSVC2wj4CYAUSrQEILxKoAQoccWpwVjhjcUpCa0I0NVpndlAvMm9UTVhienVnPRIkNzE4YTQ1MGYtZjcxZS00YjIwLWExNTAtMzYxMjVkOTBiN2I1GAAgACgAML+Y087NMziS1oW96DJAktaFvegyShx3a2VrNDNDR3RKRlJxQ3pJM2I0QXNLODB4SEU9Wh8iHdUwdjhtYlROZVlkdkxBL2x0YXdEaU1GTlovQlk9ZVgAfMfCPgJgBRKvAQgxEqoBChxtWXVLbWswUU01UVV3dXhlWldmMFZuOW9CTFE9EiQ1OTM4NjMxYi0yZTViLTQ0YmQtOWJiZS0wZWU5YThiMDE2NjIYACAAKAAw1IjTzs0zOP6A2r3qMkD+gNq96jJKHEdYVGpyZzZBWVprVmk4TGJEMHF5ajk5UWJ2Yz1aISIf///9Q3pDdVd6TWVnYU9lZ0NGT3hPcWF4V1JVaU13PWUAAAAAwj4CYAASrAEILRKnAQocUzg2Tzh6eWFVdWZiNXZYK0NveGdiaHVSZTVBPRIkNzZjYmJmYWUtMmE0Yy00Nzc2LWFjZmItZWNiMDVkZjIwYjkzGAAgACgAMK6Y087NMzjDvPy34jJAw7z8t+IyShxuZGlwUUFlZGZoOVlOcU1Nd3BaWmpZajFjMlE9Wh4iHFZEY1VRUTcxRFY5N2pOTU9McXZZYXc3ZVpjYz1lbaCf9cI+AmAFEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDAyYjMzOGRlLTZiN2YtNWM2OS05NzE2LTkzMGI2ZDg5ZWI1NBgAIAAoADC6mvCfxDI47vbbwN0xQO7228DdMUocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKvAQgsEqoBChxhWEM5NTVVb0VjR1lHUUF5R1JCQ1BVUnZTM009EiQ0YThlZjhlMi0xMGQ1LTQ0YWYtYThiYy1iYzdkMWRlNTRhODkYACAAKAAwz4jTzs0zOMXSgrjiMkDF0oK44jJKHGFlYjI5VlNoNXNFbmEvaXFsWmFQS0FaVjVmWT1aISIf///7VVVqTGJsNFBmdmlNSWpyUk9rWHBzamgvai9vPWUAAAAAwj4CYAASrgEIIhKpAQocR0ozYjRzWkhrMEkyb29DbG9zTDN2N05Wc1ZjPRIkN2VhZTc0MGItMzg4Ni00NWY5LTlmYTktOGU5YjdjNjhmNTE0GAAgACgAMLuY087NMziu47icnjJAruO4nJ4yShxzMGlOWnhaNXJDY3Rrb0JhdmFBOGZ5eDJLdTQ9WiAiHv/+aTNFSUlXaEVzOVNvRllnclg2MWJpenp6RHJFPWXXkT05wj4CYAUSrQEIKRKoAQocUlBUZm9MNUhJQ1Vhd1FNYVVWWGFDMUU5WEVzPRIkMmU1MzdjNWItNWRhMi00Y2M5LTk2NGEtMmUzZGY1NTJkM2RmGAAgACgAMKqY087NMziOsOvj2DJAjrDr49gyShx6aHdHNTkzclc0blNHMEYvNHY2Q3oyUW1MVHM9Wh8iHbdsQi9uMHMwa081QXp4V3NxMCtmd3g1eGlFVHM9ZaMrWSPCPgJgBRKsAQgoEqcBChx2TzB5d0pUeG9DdHBsR3FDR2ZaYjlxT3pUYlE9EiQ2OWI3ODBhOS02MTI3LTRkNzMtOTAwOS0wOWQ2MzI3MTFlN2EYACAAKAAwwZjTzs0zOP3H25jXMkD9x9uY1zJKHE96V296L29nTFBmZkt3U1k1TG9TMDQ0UC9SST1aHiIcb2hpOE11ZDNrcUx6M3A2bVBwYkFLUk1RUENnPWUwb4f2wj4CYAUSrQEIOBKoAQocV1lyZHo4Y05oWndYSFNzU0VvZ2FtQ29pSi9NPRIkNTc4YTg2Y2ItY2NhZC00MTI0LTk2YjQtYzVlMWYzMTIwMGZmGAAgACgAMKuY087NMzje29KQhDNA3tvSkIQzShxsa1k3aUNyS0hEZWlBaTM5OHRtZEJsUHhHWms9Wh8iHe5hOHYzWHBzVDlhc2dCVzlweXhSZHVUNGowUjQ9ZR15t3/CPgJgBRKvAQgzEqoBChxjbVNoTlZnZ3kwYzdVY1Rpclg4djR2VFd5eGM9EiRkZWUzYTg5OC1jYWZkLTQ3MzMtOTZmNS00NjQwMzI3MmViMWYYACAAKAAwyIjTzs0zOJzcgqnrMkCc3IKp6zJKHG9UNU43Ri91ekNqVnJJbFhlY1JFdFpWejM5RT1aISIf////cFlGcW1OS2ZRWnlFQkdwdkpyRG9ja24wSVZBPWUAAAAAwj4CYAASrwEIJxKqAQocY3lmVDBWb0gzN2c1NWNqSGdoeUpJU3pXanhvPRIkNDNkMmVlOWEtZTEzZi00NWVmLWE1ZDAtMTYxMzQ4ZGRkODVkGAAgACgAMNKI087NMzjfht2Y1zJA34bdmNcyShxFY0J6cVpHeDk4ZU95Umg1VmJXZk5uYkxiYTA9WiEiH///91lUWlVlWENzYUdOaVpOUVNJcVprUStzcC9END1lAAAAAMI+AmAAEq8BCCUSqgEKHDZrZHZhbUlRYzlHWXdFRk0rOVowUFdpeTJBND0SJDYyNWZiMzU2LWMzYWItNDdlNS1iNzNjLWFmNjUxMmRjMTkxNxgAIAAoADC1mNPOzTM4uMyuo8gyQLjMrqPIMkocak5vdEdjWW5xejRoQ1FWemE2bkJVQXZqcnFzPVohIh///7kwQUtpY0d4SUZzRnNBSEw0dytzMldiVHNiK1k9ZeAgt2fCPgJgBRKtAQgqEqgBChxGQ1YzZ21OUnZaMENlMXFxSStqVlZIMVR4L3c9EiQwNWE3YzY2My00ODEwLTQ2NjItYmVmZS1kNDcxNzBmMWFmM2EYACAAKAAwvZjTzs0zOPLum9fbMkDy7pvX2zJKHEUvYzV3bjVDeE5qRUtNS1FEOXVqbVdGMXIraz1aHyId22JnNE1DWlZ6Um1qT0EydU5pVk1acVhXazZmVT1loytZI8I+AmAFEq0BCA4SqAEKHEFPU2JiRCt2TVpiT3QreVIyUkdDWjFESmJmVT0SJGYyYTNmZTA1LTA4NjEtNDhlYy05ZjkzLTkxMmQ2ODlhNDAwORgAIAAoADCKpPGM7zM4l6bxjO8zQJem8YzvM0ocNWN1V1MvUnJmUEpIYVM1a1Fyalp1VFRMOGJvPVofIh38a2U4d1RGWlBJaUZHVHAySDg5Z1FVUUJ4b0RFPWUZYJgnwj4CYAUSrgEIIRKpAQocd0U2UXc3YUNERndjOWNUSm1ISjkwaTFQRXhrPRIkNGYwNGIyZGQtZjMyNy00NWI0LTg0ODctMmM3ZjkzYTBmYzU3GAAgACgAMKGY087NMziazbicnjJAms24nJ4yShxKdE54bHRheVZndEtkMFp6L011ZExLcjRNa0U9WiAiHv/9ZitpbU1HQzM0czhQdjNBbXZjRlY1L0U1NDhJPWXXkT05wj4CYAUSrQEIGxKoAQocZ282TFcySk1mOTlnU1BxVWppZ0pWNU1Oem9nPRIkZjEzZDI1ZmQtM2NhYi00Y2YyLWExM2QtZTMyMTFkM2MxNjZlGAAgACgAMMuI087NMziosbfG7jFAqLG3xu4xShx2ak1qenZ6OUppZGJ3SU1rQWMzWHFDaFBZU1k9Wh8iHf8zK3U2ZzRMRGxyNytCZjcva2FrMDVZZXJ4Mlk9ZXOZVnzCPgJgBRKtAQguEqgBChxMbmdzaVdpMW0zejBuSSsvUmVrQlFyc0JsK2s9EiQwNjU3YWY3MC0zOTk1LTQ3YTgtYjNkMi0zNTc5MjUyYjczMzEYACAAKAAwtpjTzs0zOO+UjbbjMkDvlI224zJKHDNIUzAvVWZkRGNaVkNGUnlmMklaMHVIRys5bz1aHyIdq0l6SWg2R0tCUWNNdEROSmk5SiszaUp6RVNqcz1lRilcY8I+AmAFEq4BCCASqQEKHDlBNUJvWmNMdTRnRUxhMzVMNExoaHkwSWllTT0SJGYzYmIwMGIzLTZiOTUtNDQ4MC04ZDJmLTY2MjhlNjJiOTE3YRgAIAAoADCN6vWJ2zM46baezfcxQOm2ns33MUocMDBlV0dKcjhsQ21HeHp0SXRkWlhPOWNHS0ZFPVogIh7/9jJSMzZmQnk1Szh1MUZ0UEU1MENjQkNUQis1cz1ly9T0x8I+AmAFEqwBCD4SpwEKHFBIejgxVUhOZ1hrMnhJUUxvVk52c1kwZW5HUT0SJGUxZTdlZDE4LTVmNGUtNDZiYy1iYzI2LTFhZmUzZTk2YjE2YxgAIAAoADClmNPOzTM4h+OitYQzQIfjorWEM0ocK25hZm9FcG1QNFh5K2dyMDBiWmt6d2swbmRRPVoeIhxlQnUwZ3JVQUltU2FTeG9FR3JmNE1aVmdOZXM9ZbLM+NDCPgJgBRKuAQgeEqkBChxnZWtjN1MrY1YvOWYyTGtvWi9TK1gzZVFUQ1k9EiQ4MTg1NDlhYS1kZWQ3LTRiYWQtOWZkZi04OWZlMjhlNmNjYWIYACAAKAAwnoeZyOszOJib04D1MUCYm9OA9TFKHGlwOG1HTXBRQ2ljSFhDTFVNaVFCamMyQUVMaz1aICIe/9kxTnNWbXJjOFl0dGpRT3NoeXdPWEtzQ3lUZHM9ZZn00DvCPgJgBRKuAQgdEqkBChxpKzFCS3ZadFpTa082SENPSDZXU1NWRlFOQWc9EiRkNDdmNDg5MC1iZTdhLTQ4MzAtOTRkMy1mMTcxNGJlYWM0OWUYACAAKAAwwdXAqt8zOIe6sbHvMUCHurGx7zFKHFlBUDdxY2Q4TVpzTkF3NUVQK1RIZFJUNEpVbz1aICIe/7I0YmZkRXVRMjg0RXozbmdXWjdaVEhPWHhaSVE9ZeZJULbCPgJgBRKuAQgkEqkBChxKTGFNS0ZhNjJGYjl4c1VBR3NRWm9mdi9Yem89EiQwYjllMDZjYS1mZjYwLTQ5YzgtYWVjZC1lZjRjZWE1NjgyYjkYACAAKAAw//u1hdszOLqyz+/BMkC6ss/vwTJKHE5YT2F3WEtxVDRmTXVaR0RQZ2FyQmV1VzRCTT1aICIe//9zcEs5NVJkVmdqSWNPNzBLbGZFblliUWIva1E9ZUK0rTXCPgJgBRKtAQgcEqgBChxjOWlwL014QjdKR2VTNTNTWng5MDVDS0VnMEU9EiQ4YWE4MmMyOC0xYzYyLTQzYWMtOTNiOS1mZDIxMDQyZDMxY2QYACAAKAAwytnA1d8zOL3fysnuMUC938rJ7jFKHDRqTDR4UG1NcmdLeFRoVHgxdmVkWnV4Q2c1cz1aHyId/2RLS21CVzhxdS9vTVd5UlNMNUYwYi9VSmlYWT1lepmrpsI+AmAFEq0BCBISqAEKHEQrUDVYY2Z1SmlvQXVXWnNSSlRGNTUwWnRvVT0SJDYzODhiYTAzLTExM2MtNGFjOC04YzVmLTE0NjkxZmU4MDdlMRgAIAAoADDEiNPOzTM4pOL94OkxQKTi/eDpMUocUW1iNXNiTzJ0Z3U0bDM2T0lreHZOanRWei9rPVofIh2Uai91WVc3V3E3b2RLcEtVRENmOE1Dekl4MTI4PWUAAAAAwj4CYAASsAEIQBKrAQocaVNWVCtveXRJb2pvbkcwUUNDc3ZHMnM3VWo4PRIkYThlMWYyYmQtZTRjNS00NmQ3LThjMzYtNWQzZmIwNDJmYjEwGAAgACgAMIyLjaHrMziCiev5jDNAgonr+YwzShx3d3FaSkV5cUVBb0JKemRtd3hSYWp3ZkFhS1E9WiIiIP////1uMElWMUtIUmdEZ1hOMXRQM00rVFZneGQ5RWs9ZTuUXlvCPgJgBRKsAQgHEqcBChxyZUl1ZU9oS3pjWm15ZVdtcmh3OUh4YzVaRDg9EiQyMTg5OTNkMS04YzA2LTQyZjMtOTRjNi0zYjk2ZTgxMTk1MmUYACAAKAAwvojTzs0zOLi4scPdMUC4uLHD3TFKHDhTOFk0djdYbkcxNkJpOThkdmR6MTUxbjBjQT1aHiIccTJ2WDg1R0QxSW1KbXdCOUdOTmt5RE9qbk5nPWUAAAAAwj4CYAASrQEIGhKoAQocRVlMeVhaaURNREJ5MFdyMnc4R1AyOFpPWUhnPRIkNmJhNmExZjMtZjM1YS00YjUzLTgzMDUtOTJjY2FlM2FiNGIxGAAgACgAMOq29ofUMzjS9Jq/5zFA0vSav+cxShxueUpycHRjTzR2Z0gwZDNQQXI4MXdsbDBaWEE9Wh8iHf5JNUI0UFpTZXJWUE9hSWZLcWZQL09ySEs5YUU9ZRvZZ/PCPgJgBRKtAQgwEqgBChx3V2RCalIxbG9zSy9YUHNqbEJCR2N2WGVPVjA9EiRiN2NhZTAwZC04MjI2LTQ5ZWYtOTViZC1lMTk4ODYzNDk1YzAYACAAKAAw6YShoeszONrt3a6KM0Da7d2uijNKHE5CclJCWkZVN1R5TDB3UkRIenhvRG1ydi94TT1aHyId6mZWYUN4RjFKeHA5VDN1VFFPWjdWY2FMVHh1OD1lTnPVWcI+AmAFEq0BCBUSqAEKHGVlbGMvS3pyM3JUVk5ydTZlUTlBVHZBYmxGcz0SJGRhYWVjN2M4LWEzOGYtNGNiOS05ZjUwLWIxNmIyZDY2NDVmMxgAIAAoADDO09j98TM4jq7T/OIxQI6u0/ziMUocRFJWVE13akNMU0xKZGVJeDUyUVFsM0dNaWs4PVofIh3ud1ZONG55N0ZaejBZRXFuZlYwNHFlaC9YWFVzPWWZ9NA7wj4CYAUSrQEIFhKoAQocSWIxMjQvSzNROXFBRVdlVHFYT2pvOERrT2xnPRIkZWUyMjBiOTQtM2ZmNC00NGZjLTk2ZDMtODQ5YjdmZDgwOTM2GAAgACgAMMGI087NMziYtoui5DFAmLaLouQxShx0RVdma2MwVjgrTGNZUkdzeE9EUW0vRS9LUGs9Wh8iHfdkMThIdFdiOTdUUkZSYmF1YmF0QWtBbGJuSFE9ZQQZaJbCPgJgBRKuAQgREqkBChxzRnUzTFo4RDlzU2VzR0paL0pLbnk3QlVQcXM9EiRlOGYzZDNmZS0wN2IyLTQ5OGQtYmZhOC02ZDU4ZDA5MDMxNjUYACAAKAAwuvfxjO8zOPz48YzvM0D8+PGM7zNKHHhQTlQxdnJhUTdHa1A2WTBTdWdzSHBuZ3hqWT1aICIe/6pLa1FBd0Q3WldqajR5MktxbkdBUTZZUUVEelE9ZRlgmCfCPgJgBRKwAQg7EqsBChxBTGtLWjNrSkZzMkFKZkc0VVVCenc4YmFVN1k9EiQxZDlkZDRlMy1jMTc0LTRmMTktODk5MC05YzYyYmIyYjYwZGYYACAAKAAwqZjTzs0zOKv8xczxMkCr/MXM8TJKHFlzZ1pLRkxYY0VaQzE3blZaYTNCTzhQck5Ycz1aIiIg////7nI4dzhnb3p0Q09vL3JMN3JKNGhBK3JkcXZhZz1lpCyOIcI+AmAFEq0BCBkSqAEKHEtSUGFRbjN3SUhwNUFzWUZNYUovTVREaHR4cz0SJDQ0ZjgzZGZhLWU4MjAtNDdmMC1hMTViLWVmZTRjMGZmZTYyNBgAIAAoADDJiNPOzTM4uPP1hecxQLjz9YXnMUocV2tjUkJOZjNkMTRseUh5QjBUN0dxKy9VQXRRPVofIh39NDZyTXJmaHRxK0ErVVNuaUhhN0pLc05CYy9rPWWceOw6wj4CYAUSrQEIEBKoAQoccEc1Uk93NUhGUGhHSjFldE5jV3BLWG1mSnVBPRIkY2U3ZmNlMmMtZTUzZi00YjQ4LWJhMGMtNWQ2NTZhM2NlYTIwGAAgACgAMKrW8YzvMzjZ1/GM7zNA2dfxjO8zShxKMThhbVhvWXoxcUJCYW90dmFVaFJGRVFaTGs9Wh8iHf9USmJQMkZoQXhuNjBTQldsTWtFKzI3cTUwc0U9ZRlgmCfCPgJgBRKtAQgYEqgBChxycGQ5bW9KSHlKU1ovUndKQ2pNWStVNHIyTE09EiQ3NTAyOTJiZi1mOTk3LTRhZTMtOTYxZi05YmYxY2NlOGQxNjUYACAAKAAw15uAjtwzOPnf39fkMUD539/X5DFKHHRYSjFNNjkwM3RSWU1STEVsYlpPZlp6bFpnWT1aHyId+1lZcXBUMGJOblVUVktLNjFqUVpqNXU2OFhZTT1lQcMt3sI+AmAFEqwBCAgSpwEKHHpIdXpWVWVBQ3FQTGUrYVIyZ1Azclh4S0xyUT0SJGZmYWJlOWRlLTE0OGItNDZlMi05NTE0LTlkZDE0MDAwYWM2MRgAIAAoADDymazp4zM4r7Kww90xQK+ysMPdMUocMGc5dUFjVHhZOE93YlZrU2RyZFR1N1BXQThZPVoeIhw3M2dMRzlSb1RDcmFQcCt0T295a3FDNjYvZFE9ZQUHGHXCPgJgBRKtAQgPEqgBChxiODJWc3BFRmZoNzArSXFEMkJzYjg1bzF4Mnc9EiQzN2I3ODBhMC05OWIyLTQ5ZDgtOGM0Yy0yMzRiZDY1ZTY2ZmYYACAAKAAw6LzxjO8zOKm+8YzvM0CpvvGM7zNKHHdHN3NCakI1Y21kcHB2dVpkcVNISU56N3BPbz1aHyId/mhMTFdkMHhjbDh2OUdvdGRabTJEVkVCaVdTUT1lGWCYJ8I+AmAFEq0BCBQSqAEKHFg4QWFZMSt5UURHdTBxY3N1ZitLVGVSb2ZpQT0SJGU4YmViZWFmLTEyZmItNDA5Zi04YjZmLTk4YmNkM2VhNzlmMhgAIAAoADCi9Yue9DM4huTp0uIxQIbk6dLiMUocZnJpTGQzL2dIOFJ3Rk5LV3pnNGlzUEFSSndBPVofIh3cbTFHQkpDQ3psdnVndHNJTkNiWmQ1cG1TakFvPWWlTJlNwj4CYAUSrgEIIxKpAQocWXhyK05IbElCSEtuWTFmeDhnaXBXT3I3bUxBPRIkZGEzZTBmZTAtMTFmMi00NjEzLTg4YTktZDU4OWIxY2RhYjk3GAAgACgAMP+2m7rbMzj3moPlojJA95qD5aIyShxpY2wzL2VDQmtBN3JBUVoveXE5M2tLb1AvWG89WiAiHv//TW1VRHBmNGlHMFNNZkdTU3FUWENZeEdEdXBBPWXL1PTHwj4CYAUSrQEIFxKoAQocaW90anh2c0k2ZmVkUy9CTkFnTE4xVC9LaWtBPRIkYzA2YTc3MWUtM2ZlZC00Mzc1LWE3OGItMDg1ZmM1NTlmZDUzGAAgACgAML2I087NMzjUoprmjTJA1KKa5o0yShxMbzgycU5XcDduL01mUjhuYTNlS0J1c1MxSms9Wh8iHflDVk5qMGlTZGcwRWpzTEllSnFlaWE4TndKZkE9ZUqqjXDCPgJgBRKtAQgNEqgBChwrYmRaQVZQZUNacHdiK1hzbXIrSjREZ2VyWlE9EiQ0NWFmYmM0NC0wYjU3LTRkYWMtYjViMC01ZTQ1OWFmMzQ0YmEYACAAKAAwzZ60/t8zOKKgtP7fM0CioLT+3zNKHFI2bGJ4YUNQbDNNZHRlVG5kaXliVm9uZlZDUT1aHyId+TVoZ2VqS2xvWTdjZC9XMDNSZzlaaEdpT202VT1lhXCxBMI+AmAFEq4BCB8SqQEKHDJKYnBtUkpBdXg0bWsrZm9xQ1RLZ3daYi9iUT0SJDA1ZTc0OWZlLTI4YmEtNDAxNi1hZGE2LTg3ZGY2MzJmYjJmYxgAIAAoADDGiNPOzTM4tePJq/UxQLXjyav1MUocK0NOVkxmWGkxM1I3M1FQZENpMU9TNmloazhRPVogIh7/7Dd4eWVGazVtNm9yU3ZUUnE3dHVlNHV2V09Mbz1lpuP5RsI+AmAFEq0BCAwSqAEKHGtnNTdEMGg4QUdoNHRldDExUlV6blc1dHVlST0SJGZjNjhiNTkyLWJjNGUtNDRkNi05MDgyLWQzNGJjNDc0ZTA3MxgAIAAoADComNPOzTM43qiFt4QzQN6ohbeEM0ocUVp2M3I5ZlIxTlBvcVplV0gzK1Uwcm1NeENBPVofIh3zVDFSekdGV2JXZW1oak5iWFNZZ1ZyblRpSGZNPWU0VzoBwj4CYAUSrwEIJhKqAQocalRxNWRSRm1IRWl1TXhDNGZsclpIUU1UVkRzPRIkMmU0Mzc0ZjUtZTE2MC00MzliLTg1ZDQtMzVmMjc0ZjI0OTZiGAAgACgAMKSY087NMziFsI+n1DJAhbCPp9QyShxzbE9hMENjZXE0eEpzczFhb3k4ajdHS09FMmM9WiEiH///3GRQK1paVmRBK0h6R2E5SEloS2dBWTJPTWkwOD1l1TCTeMI+AmAFEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJGQyZjcyODFlLTNmZWUtNTZlMS04OTVmLTE2Njg5NDI5NjlhNRgAIAAoADC8mvCfxDI4zvbbwN0xQM7228DdMUocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgABKtAQgrEqgBChxtZFlRL0hxdjlscC9JaWJWU0YvbEU5QkNMckU9EiQ0NTNhMTgwMy0xMjUwLTQwMDItYWFjNS0xMWFhZTlhNGY5M2IYACAAKAAw04jTzs0zOKjSgrjiMkCo0oK44jJKHFBFa1hnZ0QxSS8xdWZPeitxcWplaE90YlF4cz1aHyId9jJYdFU2NHNQYmV1enY1WjRsalRmYWh5eEVoQT1lAAAAAMI+AmAAEq0BCAoSqAEKHFlYMUN0Zk1sRzFidVJRaS9qRVNLMVNOVTZwUT0SJDI5MDM3Nzc1LWU0MTItNGQ4Yi05ZmI4LTFjYzgzZGIzOWNmNxgAIAAoADC/iNPOzTM447KLxN0xQOOyi8TdMUocM0JnMlhJMDZDT2lxRitFaG1MUVNvOTN5aUhjPVofIh3mQ0E0eEF0N1lldTkvcExKMnFpWm9zUmxWbVdzPWUAAAAAwj4CYAASrQEICRKoAQocalRrekJUSlU0dWlJUERQSHp3bWZNT2J6TmNRPRIkNDc4NWNiNjYtZDA2OC00NjkxLTk4MGQtMGRlMmNmMTkwZjRjGAAgACgAMK2Y087NMzjr9bHD3TFA6/Wxw90xShw3YS9lTERZZnlsQ1dQbkVJUmxZVE1tTTNSdGs9Wh8iHZs2aHh5cmVpRW9CbjczaWsyc1N3R0lRZ3FXZ1E9ZR1qKqXCPgJgBRKsAQgTEqcBChxtZEVyRGdHOTMzRFBlSHNhUlNmVUdpcXY2enc9EiQ4MGI2ZmZkZC03MmJlLTQ0ZmMtYmY1My05MDE5ZmJkNzAzMWEYACAAKAAwopjTzs0zOKjk/+DpMUCo5P/g6TFKHGJEb012N0ZOZ1h4ZGo0aXMyS0g5TU5CQUlJcz1aHiIcK1BPaW5JcjVhRzdPa0NLSVYxY1VpWjRtNmtrPWVQ5Qtuwj4CYAUSrAEICxKnAQocU2lNZDhVR1U5Z2puak0za1JyU3RIWnY5TW1vPRIkNDA3N2ExYmEtMWUxOC00NmU3LTg5NjEtNDNmNmEzOWY0NmJhGAAgACgAMLSY087NMziwworE3TFAsMKKxN0xShxSOHpTdlNVRHA3bFdORTFVOWRTMVlKNFM4NDg9Wh4iHG5nNm5RQVhrdG5Rb1J3V2tVbmEzcFRHSW5adz1lIyju18I+AmAFMAA4AA==",
+   "version": 1
+}

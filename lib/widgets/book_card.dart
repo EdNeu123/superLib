@@ -27,13 +27,13 @@ class BookCard extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(6),
                   child: SizedBox(
-                    width: 38,
-                    height: 56,
+                    width: 56,
+                    height: 82,
                     child: _Cover(book: book, cores: cores),
                   ),
                 ),
               ),
-              const SizedBox(width: 6),
+              const SizedBox(width: 8),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,7 +44,7 @@ class BookCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 11,
+                        fontSize: 14,
                         height: 1.2,
                       ),
                     ),
@@ -54,7 +54,7 @@ class BookCard extends StatelessWidget {
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                        fontSize: 9.5,
+                        fontSize: 12,
                         color: cores.onSurfaceVariant,
                       ),
                     ),
@@ -108,7 +108,7 @@ class _Cover extends StatelessWidget {
       color: cores.surfaceContainerHighest,
       child: Icon(
         Icons.menu_book_rounded,
-        size: 18,
+        size: 26,
         color: cores.onSurfaceVariant,
       ),
     );
